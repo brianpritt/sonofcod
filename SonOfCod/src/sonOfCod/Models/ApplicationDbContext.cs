@@ -5,6 +5,7 @@ namespace sonOfCod.Models
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public virtual DbSet<MailingList> Inventories { get; set; }
         public ApplicationDbContext(DbContextOptions options) : base(options)
         {
 
