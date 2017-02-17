@@ -199,6 +199,7 @@
 -resource:"C:\Users\Brian\Desktop\dotnetSonOfCod\SonOfCod\src\sonOfCod\obj\Debug\netcoreapp1.0\sonOfCoddotnet-compile.deps.json",sonOfCod.deps.json
 "C:\Users\Brian\Desktop\dotnetSonOfCod\SonOfCod\src\sonOfCod\Program.cs"
 "C:\Users\Brian\Desktop\dotnetSonOfCod\SonOfCod\src\sonOfCod\Startup.cs"
+"C:\Users\Brian\Desktop\dotnetSonOfCod\SonOfCod\src\sonOfCod\Controllers\AccountController.cs"
 "C:\Users\Brian\Desktop\dotnetSonOfCod\SonOfCod\src\sonOfCod\Controllers\HomeController.cs"
 "C:\Users\Brian\Desktop\dotnetSonOfCod\SonOfCod\src\sonOfCod\Migrations\20170217181246_Initial.cs"
 "C:\Users\Brian\Desktop\dotnetSonOfCod\SonOfCod\src\sonOfCod\Migrations\20170217181246_Initial.Designer.cs"
@@ -206,3 +207,5 @@
 "C:\Users\Brian\Desktop\dotnetSonOfCod\SonOfCod\src\sonOfCod\Models\ApplicationDbContext.cs"
 "C:\Users\Brian\Desktop\dotnetSonOfCod\SonOfCod\src\sonOfCod\Models\ApplicationUser.cs"
 "C:\Users\Brian\Desktop\dotnetSonOfCod\SonOfCod\src\sonOfCod\Models\MailingList.cs"
+"C:\Users\Brian\Desktop\dotnetSonOfCod\SonOfCod\src\sonOfCod\ViewModels\LoginViewModel.cs"
+"C:\Users\Brian\Desktop\dotnetSonOfCod\SonOfCod\src\sonOfCod\ViewModels\RegisterViewModel.cs"
