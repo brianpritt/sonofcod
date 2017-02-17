@@ -1,0 +1,26 @@
+﻿@model sonOfCod.Models.MailingList
+@{
+    ViewData["Title"] = "Son Of Cod";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <h3>Fishy News</h3>
+    <h4>Sign up for our Newsletter to keep up with the most current Fishy News!</h4>
+    
+    @using (Html.BeginForm())
+    {
+        @Html.LabelFor(model => model.CustomerFirstName, "First Name: ")
+        @Html.EditorFor(model => model.CustomerFirstName)
+
+        @Html.LabelFor(model => model.CustomerLastName, "Last Name: ")
+        @Html.EditorFor(model => model.CustomerLastName)
+
+        @Html.LabelFor(model => model.CustomerEmail, "Email: ")
+        @Html.EditorFor(model => model.CustomerEmail)
+
+        <input class="btn" type="submit" value="Create" />
+    }
+
+@if (User.Identity.IsAuthenticated) { }
+
+</div>

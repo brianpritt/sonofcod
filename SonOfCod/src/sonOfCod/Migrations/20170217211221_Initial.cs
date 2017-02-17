@@ -68,9 +68,9 @@ namespace sonOfCod.Migrations
                 {
                     CustomerId = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    CustomerEmail = table.Column<int>(nullable: false),
-                    CustomerFirstName = table.Column<int>(nullable: false),
-                    CustomerLastName = table.Column<int>(nullable: false)
+                    CustomerEmail = table.Column<string>(nullable: true),
+                    CustomerFirstName = table.Column<string>(nullable: true),
+                    CustomerLastName = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -163,6 +163,28 @@ namespace sonOfCod.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "Newses",
+                columns: table => new
+                {
+                    PostId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    PostContent = table.Column<int>(nullable: false),
+                    PostTitle = table.Column<int>(nullable: false),
+                    PosterId = table.Column<int>(nullable: false),
+                    SubmitterId = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Newses", x => x.PostId);
+                    table.ForeignKey(
+                        name: "FK_Newses_AspNetUsers_SubmitterId",
+                        column: x => x.SubmitterId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "RoleNameIndex",
                 table: "AspNetRoles",
@@ -203,6 +225,11 @@ namespace sonOfCod.Migrations
                 table: "AspNetUsers",
                 column: "NormalizedUserName",
                 unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Newses_SubmitterId",
+                table: "Newses",
+                column: "SubmitterId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -224,6 +251,9 @@ namespace sonOfCod.Migrations
 
             migrationBuilder.DropTable(
                 name: "MailingLists");
+
+            migrationBuilder.DropTable(
+                name: "Newses");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");

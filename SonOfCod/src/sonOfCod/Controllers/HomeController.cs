@@ -10,11 +10,23 @@ using sonOfCod.Models;
 namespace sonOfCod.Controllers
 {
     public class HomeController : Controller
+        
     {
         private ApplicationDbContext db = new ApplicationDbContext();
         public IActionResult Index()
         {
             return View();
+        }
+        public IActionResult Newsletter()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Newsletter(MailingList mailinglist)
+        {
+            db.MailingLists.Add(mailinglist);
+            db.SaveChanges();
+            return RedirectToAction("Index");
         }
 
         

@@ -177,15 +177,35 @@ namespace sonOfCod.Migrations
                     b.Property<int>("CustomerId")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int>("CustomerEmail");
+                    b.Property<string>("CustomerEmail");
 
-                    b.Property<int>("CustomerFirstName");
+                    b.Property<string>("CustomerFirstName");
 
-                    b.Property<int>("CustomerLastName");
+                    b.Property<string>("CustomerLastName");
 
                     b.HasKey("CustomerId");
 
                     b.ToTable("MailingLists");
+                });
+
+            modelBuilder.Entity("sonOfCod.Models.News", b =>
+                {
+                    b.Property<int>("PostId")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("PostContent");
+
+                    b.Property<int>("PostTitle");
+
+                    b.Property<int>("PosterId");
+
+                    b.Property<string>("SubmitterId");
+
+                    b.HasKey("PostId");
+
+                    b.HasIndex("SubmitterId");
+
+                    b.ToTable("Newses");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityRoleClaim<string>", b =>
@@ -223,6 +243,13 @@ namespace sonOfCod.Migrations
                         .WithMany("Roles")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("sonOfCod.Models.News", b =>
+                {
+                    b.HasOne("sonOfCod.Models.ApplicationUser", "Submitter")
+                        .WithMany()
+                        .HasForeignKey("SubmitterId");
                 });
         }
     }

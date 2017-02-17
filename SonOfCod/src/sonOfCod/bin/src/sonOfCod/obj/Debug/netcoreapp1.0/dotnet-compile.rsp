@@ -1,5 +1,5 @@
---temp-output:C:\Users\Brian\Desktop\dotnetSonOfCod\SonOfCod\src\sonOfCod\obj\Debug\netcoreapp1.0\
---out:C:\Users\Brian\Desktop\dotnetSonOfCod\SonOfCod\src\sonOfCod\bin\Debug\netcoreapp1.0\sonOfCod.dll
+--temp-output:C:\Users\Brian\Desktop\dotnetSonOfCod\SonOfCod\src\sonOfCod\bin\src\sonOfCod\obj\Debug\netcoreapp1.0\
+--out:C:\Users\Brian\Desktop\dotnetSonOfCod\SonOfCod\src\sonOfCod\bin\src\sonOfCod\bin\Debug\netcoreapp1.0\sonOfCod.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -200,13 +200,15 @@
 --reference:C:\Users\Brian\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\Brian\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\Brian\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
---resource:"C:\Users\Brian\Desktop\dotnetSonOfCod\SonOfCod\src\sonOfCod\obj\Debug\netcoreapp1.0\sonOfCoddotnet-compile.deps.json",sonOfCod.deps.json
+--resource:"C:\Users\Brian\Desktop\dotnetSonOfCod\SonOfCod\src\sonOfCod\bin\src\sonOfCod\obj\Debug\netcoreapp1.0\sonOfCoddotnet-compile.deps.json",sonOfCod.deps.json
 C:\Users\Brian\Desktop\dotnetSonOfCod\SonOfCod\src\sonOfCod\Program.cs
 C:\Users\Brian\Desktop\dotnetSonOfCod\SonOfCod\src\sonOfCod\Startup.cs
 C:\Users\Brian\Desktop\dotnetSonOfCod\SonOfCod\src\sonOfCod\Controllers\AccountController.cs
 C:\Users\Brian\Desktop\dotnetSonOfCod\SonOfCod\src\sonOfCod\Controllers\HomeController.cs
-C:\Users\Brian\Desktop\dotnetSonOfCod\SonOfCod\src\sonOfCod\Migrations\20170217211221_Initial.cs
-C:\Users\Brian\Desktop\dotnetSonOfCod\SonOfCod\src\sonOfCod\Migrations\20170217211221_Initial.Designer.cs
+C:\Users\Brian\Desktop\dotnetSonOfCod\SonOfCod\src\sonOfCod\Migrations\20170217181246_Initial.cs
+C:\Users\Brian\Desktop\dotnetSonOfCod\SonOfCod\src\sonOfCod\Migrations\20170217181246_Initial.Designer.cs
+C:\Users\Brian\Desktop\dotnetSonOfCod\SonOfCod\src\sonOfCod\Migrations\20170217202932_Configuration.cs
+C:\Users\Brian\Desktop\dotnetSonOfCod\SonOfCod\src\sonOfCod\Migrations\20170217202932_Configuration.Designer.cs
 C:\Users\Brian\Desktop\dotnetSonOfCod\SonOfCod\src\sonOfCod\Migrations\ApplicationDbContextModelSnapshot.cs
 C:\Users\Brian\Desktop\dotnetSonOfCod\SonOfCod\src\sonOfCod\Models\ApplicationDbContext.cs
 C:\Users\Brian\Desktop\dotnetSonOfCod\SonOfCod\src\sonOfCod\Models\ApplicationUser.cs
