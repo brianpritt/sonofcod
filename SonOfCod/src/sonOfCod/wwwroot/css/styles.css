@@ -1,0 +1,41 @@
+﻿body {
+    
+    background-image: url(../img/Cod.png);
+    
+}
+.index-header {
+    text-align:center;
+    background-color:rgba(0,0,0,.5);
+    color:coral;
+}
+.index-middle {
+    margin-top: 20px;
+    background-color:rgba(0,0,0,.5);
+    text-align:center;
+    margin: 0 20px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+
+}
+.index-images{
+     margin-top: 20px;
+    background-color:rgba(0,0,0,.5);
+    text-align:center;
+    margin: 0 20px;
+    border-radius: 8px;
+}
+.index-images img {
+    width: 300px;
+    flex-wrap: wrap;
+    flex: 30%;
+    margin: 20px;
+    
+}
+a:visited{
+    color: white;
+}
+p:visited{
+    color:black;
+}
+

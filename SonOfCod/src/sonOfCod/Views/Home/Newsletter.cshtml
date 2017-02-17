@@ -4,23 +4,35 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <div class="container">
-    <h3>Fishy News</h3>
-    <h4>Sign up for our Newsletter to keep up with the most current Fishy News!</h4>
-    
-    @using (Html.BeginForm())
-    {
-        @Html.LabelFor(model => model.CustomerFirstName, "First Name: ")
-        @Html.EditorFor(model => model.CustomerFirstName)
+    <div class="index-middle">
+        <h3>Fishy News</h3>
+        <h4>Sign up for our Newsletter to keep up with the most current Fishy News!</h4>
+        @if (User.Identity.IsAuthenticated)
+        {
+            <p>@Html.ActionLink("Welcome Admin, view current mailing list here.", "Index", "Account")</p>
+        }
+    </div>
+    <div class="row">
+        <div class="col s12 m12">
+            <div class="card-panel white">
+                <span class="white-text">
+                    @using (Html.BeginForm())
+                    {
+                        @Html.LabelFor(model => model.CustomerFirstName, "First Name: ")
+                        @Html.EditorFor(model => model.CustomerFirstName)
 
-        @Html.LabelFor(model => model.CustomerLastName, "Last Name: ")
-        @Html.EditorFor(model => model.CustomerLastName)
+                        @Html.LabelFor(model => model.CustomerLastName, "Last Name: ")
+                        @Html.EditorFor(model => model.CustomerLastName)
 
-        @Html.LabelFor(model => model.CustomerEmail, "Email: ")
-        @Html.EditorFor(model => model.CustomerEmail)
+                        @Html.LabelFor(model => model.CustomerEmail, "Email: ")
+                        @Html.EditorFor(model => model.CustomerEmail)
 
-        <input class="btn" type="submit" value="Create" />
-    }
+                        <input class="btn" type="submit" value="Create" />
+                    }
+                </span>
+            </div>
+        </div>
+    </div>
+   
 
-@if (User.Identity.IsAuthenticated) { }
 
-</div>
