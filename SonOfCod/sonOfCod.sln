@@ -12,7 +12,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "sonOfCod", "src\sonOfCod\sonOfCod.xproj", "{54C9F2D6-349B-4963-81A1-54B5DAB3F1CE}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "gummybearsforever", "..\..\..\Documents\Visual Studio 2015\Projects\gummybearsforever\src\gummybearsforever\gummybearsforever.xproj", "{F925D9DE-1EA7-498D-8D87-23E77684FC7C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{D338DE2F-ABB7-4E5E-80E5-8639D4211C95}"
+	ProjectSection(SolutionItems) = preProject
+		xunit.runner.json = xunit.runner.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "sonOfCod.Tests", "sonOfCod.Tests\sonOfCod.Tests.xproj", "{C9FDEE50-F3B3-49A0-B785-BB0B8BF3AB40}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,15 +29,16 @@ Global
 		{54C9F2D6-349B-4963-81A1-54B5DAB3F1CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54C9F2D6-349B-4963-81A1-54B5DAB3F1CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54C9F2D6-349B-4963-81A1-54B5DAB3F1CE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F925D9DE-1EA7-498D-8D87-23E77684FC7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F925D9DE-1EA7-498D-8D87-23E77684FC7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F925D9DE-1EA7-498D-8D87-23E77684FC7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F925D9DE-1EA7-498D-8D87-23E77684FC7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9FDEE50-F3B3-49A0-B785-BB0B8BF3AB40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9FDEE50-F3B3-49A0-B785-BB0B8BF3AB40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9FDEE50-F3B3-49A0-B785-BB0B8BF3AB40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9FDEE50-F3B3-49A0-B785-BB0B8BF3AB40}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{54C9F2D6-349B-4963-81A1-54B5DAB3F1CE} = {84155822-0B14-42EC-8C03-92F58A26CFDE}
+		{C9FDEE50-F3B3-49A0-B785-BB0B8BF3AB40} = {D338DE2F-ABB7-4E5E-80E5-8639D4211C95}
 	EndGlobalSection
 EndGlobal

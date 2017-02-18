@@ -19,6 +19,9 @@ namespace sonOfCod.Controllers
             _signInManager = signInManager;
             _db = db;
         }
+
+       
+
         public IActionResult Index()
         {
             if (User.Identity.IsAuthenticated)
