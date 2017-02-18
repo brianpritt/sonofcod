@@ -1,4 +1,4 @@
-﻿namespace BasicAuthentication.ViewModels
+﻿namespace sonOfCod.ViewModels
 {
     public class LoginViewModel
     {

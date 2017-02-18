@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using sonOfCod.Models;
 using System.Threading.Tasks;
 using System.Linq;
-using BasicAuthentication.ViewModels;
+using sonOfCod.ViewModels;
 
 namespace sonOfCod.Controllers
 {

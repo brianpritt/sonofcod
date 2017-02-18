@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace BasicAuthentication.ViewModels
+namespace sonOfCod.ViewModels
 {
     public class RegisterViewModel
     {
